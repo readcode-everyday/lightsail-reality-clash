@@ -1,0 +1,16 @@
+# Documentation template only. Replace placeholders with locally generated values.
+name: My-Reality
+type: vless
+server: 203.0.113.10
+port: 443
+uuid: REPLACE_WITH_GENERATED_UUID
+flow: xtls-rprx-vision
+tls: true
+servername: www.cloudflare.com
+client-fingerprint: chrome
+udp: true
+packet-encoding: xudp
+reality-opts:
+  public-key: REPLACE_WITH_GENERATED_PUBLIC_KEY
+  short-id: REPLACE_WITH_GENERATED_SHORT_ID
+  support-x25519mlkem768: true

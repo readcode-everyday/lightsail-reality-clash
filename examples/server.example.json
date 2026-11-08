@@ -1,0 +1,27 @@
+{
+  "log": { "loglevel": "warning" },
+  "inbounds": [{
+    "listen": "0.0.0.0",
+    "port": 443,
+    "protocol": "vless",
+    "settings": {
+      "clients": [{ "id": "REPLACE_WITH_GENERATED_UUID", "flow": "xtls-rprx-vision" }],
+      "decryption": "none"
+    },
+    "streamSettings": {
+      "network": "raw",
+      "security": "reality",
+      "realitySettings": {
+        "target": "www.cloudflare.com:443",
+        "serverNames": ["www.cloudflare.com"],
+        "privateKey": "REPLACE_WITH_GENERATED_PRIVATE_KEY",
+        "shortIds": ["REPLACE_WITH_GENERATED_SHORT_ID"]
+      }
+    }
+  }],
+  "outbounds": [{
+    "protocol": "freedom",
+    "settings": {},
+    "streamSettings": { "sockopt": { "domainStrategy": "UseIPv4" } }
+  }]
+}

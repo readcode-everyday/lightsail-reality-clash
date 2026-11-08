@@ -1,0 +1,16 @@
+{
+  "name": "lightsail-reality-clash",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Deploy a self-hosted REALITY + Vision node and generate Mihomo/Clash profiles.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/configure-clash.test.cjs"
+  },
+  "dependencies": {
+    "yaml": "2.9.1"
+  }
+}
